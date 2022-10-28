@@ -21,5 +21,8 @@ function randomDate(start, end) {
 }
 
 // register an event onClick for the button
-let elButton = document.getElementById("myButton");
-elButton.onclick = check;
+if (typeof document !== 'undefined') {
+    let elButton = document.getElementById("myButton");
+    elButton.onclick = check;
+}
+console.log("start");
